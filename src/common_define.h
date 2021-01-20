@@ -11,6 +11,9 @@
 #ifndef _COMMON_DEFINE_H_
 #define _COMMON_DEFINE_H_
 
+//启动http服务;
+//#define WITH_HTTPD
+
 #include <pthread.h>
 #include <string.h>
 #include <errno.h>

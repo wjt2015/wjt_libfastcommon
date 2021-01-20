@@ -166,6 +166,11 @@ cp Makefile.in Makefile
 ##指定文件安装目录和CFLAGS;
 TARGET_PREFIX=/Users/jintao9/linux2014/install_dir/fastdfs_all/libfastcommon
 
+echo "CFLAGS="$CFLAGS
+echo "LIBS="$LIBS
+echo "LIB_VERSION="$LIB_VERSION
+
+
 sed_replace "s#\\\$(CFLAGS)#$CFLAGS#g" Makefile
 sed_replace "s#\\\$(LIBS)#$LIBS#g" Makefile
 sed_replace "s#\\\$(TARGET_PREFIX)#$TARGET_PREFIX#g" Makefile
